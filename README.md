@@ -5,7 +5,7 @@
 ## <h2 align="center">Flats 6</h2>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made_with-Python-blue?logo=python&logoColor=ffd343" alt="Made in GDevelop" />  
+  <img src="https://img.shields.io/badge/Made%20with-GDevelop-blueviolet?style=for-the-badge&logo=https://github.com/MTSyntho/Flats-6/blob/main/gdevelopWhiteLogo.png?raw=true" alt="Made in GDevelop" />  
 </p>
 
 Flats Version 6 by Foliage Games finally avaliable to the public.  
