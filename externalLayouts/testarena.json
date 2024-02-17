@@ -1,0 +1,53 @@
+{
+  "associatedLayout": "game",
+  "name": "testArena",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 627,
+      "layer": "",
+      "name": "New3DBox",
+      "persistentUuid": "415daef6-cfab-43f6-bf51-0afd49a1736f",
+      "width": 1219,
+      "x": 363,
+      "y": 259,
+      "z": -5,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 10,
+      "height": 100,
+      "layer": "",
+      "name": "platform",
+      "persistentUuid": "8ecd19b2-ebe7-4f13-8d80-377f05a45830",
+      "width": 100,
+      "x": 1145,
+      "y": 514,
+      "z": 10,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.3645833333333333,
+    "windowMask": false
+  }
+}

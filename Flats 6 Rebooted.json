@@ -189,13 +189,260 @@
         "metadata": "",
         "name": "assets\\fonts\\default_android.ttf",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Multiplayer0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Multiplayer0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Multiplayer1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Multiplayer1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Multiplayer2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Multiplayer2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Multiplayer3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Multiplayer3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Multiplayer4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Multiplayer4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Multiplayer5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Multiplayer5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio/FlatsBGM1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\FlatsBGM1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/Menu.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio\\Menu.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/reference2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholder\\reference2.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/weapons/Weapon12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\weapons\\Weapon12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/gui/fire.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\gui\\fire.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/gui/Reload.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\gui\\Reload.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/gui/Jump.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\gui\\Jump.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/gui/Zoom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\gui\\Zoom.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/gui/Menu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\gui\\Menu.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/Flatman_LOD0.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\Flatman_LOD0.glb",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "texture_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "texture_03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "texture_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "texture_04.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "button",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 1,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 1,
+          "useLegacyBottomAndRightAnchors": false
+        },
+        {
+          "name": "SpriteRecolorizer",
+          "type": "Recolorizer::SpriteRecolorizer"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\placeholder\\black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "button"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [
@@ -219,10 +466,43 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/untitled-external-events"
+    }
+  ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/collision3d"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/raycaster3d"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firstpersoncamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/jump3d"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/walk3d"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/thirdpersoncamera"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/fps"
@@ -248,6 +528,11 @@
       "referenceTo": "/eventsFunctionsExtensions/alignobject"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/testarena"
+    }
+  ],
   "externalSourceFiles": []
 }

@@ -21,13 +21,109 @@
     "zoomFactor": 0.3645833333333333,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "notifyBar",
+      "objects": [
+        {
+          "name": "notification"
+        },
+        {
+          "name": "notificationText"
+        },
+        {
+          "name": "notifcationTime"
+        }
+      ]
+    },
+    {
+      "name": "btnText",
+      "objects": [
+        {
+          "name": "btn1"
+        },
+        {
+          "name": "btn2"
+        },
+        {
+          "name": "btn3"
+        },
+        {
+          "name": "btn4"
+        },
+        {
+          "name": "btn5"
+        },
+        {
+          "name": "btn6"
+        }
+      ]
+    },
+    {
+      "name": "mainIcons",
+      "objects": [
+        {
+          "name": "multiplayer"
+        },
+        {
+          "name": "singleplayer"
+        },
+        {
+          "name": "character"
+        },
+        {
+          "name": "settings"
+        },
+        {
+          "name": "leaderboard"
+        },
+        {
+          "name": "info"
+        }
+      ]
+    },
+    {
+      "name": "mpIcons",
+      "objects": [
+        {
+          "name": "openMatch"
+        },
+        {
+          "name": "inviteMatch"
+        },
+        {
+          "name": "lanMatch"
+        },
+        {
+          "name": "chatRoom"
+        },
+        {
+          "name": "connectMethod"
+        },
+        {
+          "name": "serverVersion"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "folded": true,
       "name": "colorHex",
       "type": "string",
       "value": ""
+    },
+    {
+      "folded": true,
+      "name": "state",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "notify",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -198,7 +294,7 @@
       "customSize": true,
       "depth": 1,
       "height": 194,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "multiplayer",
       "persistentUuid": "a4cd942c-33c4-463f-bc97-2a229f826d6c",
@@ -215,7 +311,7 @@
       "customSize": true,
       "depth": 1,
       "height": 194,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "singleplayer",
       "persistentUuid": "a874c07b-abe9-4810-a8d6-f94705c7b0a7",
@@ -232,7 +328,7 @@
       "customSize": true,
       "depth": 1,
       "height": 194,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "character",
       "persistentUuid": "74faaa59-c817-4c5c-b33e-7afd64bacef3",
@@ -249,7 +345,7 @@
       "customSize": true,
       "depth": 1,
       "height": 162,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "settings",
       "persistentUuid": "145804a8-33bc-453e-baa7-ed9894e3aaf2",
@@ -266,7 +362,7 @@
       "customSize": true,
       "depth": 1,
       "height": 146,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "leaderboard",
       "persistentUuid": "9b1e2457-6f99-4def-8d57-ba750e364aea",
@@ -279,11 +375,11 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": -1,
       "customSize": true,
       "depth": 1,
       "height": 128,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "info",
       "persistentUuid": "5052953c-f564-41c9-82a3-e3ff799b0331",
@@ -300,7 +396,7 @@
       "customSize": true,
       "depth": 1,
       "height": 34,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "btn1",
       "persistentUuid": "9df20875-b5d8-47fe-ba00-a717c6b0af25",
@@ -317,7 +413,7 @@
       "customSize": true,
       "depth": 0,
       "height": 32,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "btn2",
       "persistentUuid": "a67ecbe3-7ac6-49de-a998-8734e59aea38",
@@ -334,7 +430,7 @@
       "customSize": true,
       "depth": 0,
       "height": 32,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "btn3",
       "persistentUuid": "d927a619-7048-4f2f-8abd-4a19ed13ff7d",
@@ -351,7 +447,7 @@
       "customSize": true,
       "depth": 0,
       "height": 32,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "btn4",
       "persistentUuid": "9886bd92-8859-4565-97b6-0266f5462d93",
@@ -368,7 +464,7 @@
       "customSize": true,
       "depth": 0,
       "height": 32,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "btn5",
       "persistentUuid": "d4962e2b-9bbb-453a-9d36-856cfe199aad",
@@ -385,7 +481,7 @@
       "customSize": true,
       "depth": 0,
       "height": 32,
-      "layer": "buttons",
+      "layer": "main",
       "locked": true,
       "name": "btn6",
       "persistentUuid": "3506bae6-1835-49fd-ae27-c562e901f3b3",
@@ -448,7 +544,7 @@
       "customSize": true,
       "depth": 1,
       "height": 60,
-      "layer": "buttons",
+      "layer": "main",
       "name": "quit",
       "persistentUuid": "41e8eb16-348f-4d92-9e27-639c47a97258",
       "width": 60,
@@ -464,7 +560,7 @@
       "customSize": true,
       "depth": 1,
       "height": 60,
-      "layer": "buttons",
+      "layer": "main",
       "name": "reset",
       "persistentUuid": "d2878cdf-2b83-4f21-b84d-e44416164ad9",
       "width": 62,
@@ -486,6 +582,159 @@
       "x": 23,
       "y": 20,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 154,
+      "layer": "multiplayer",
+      "locked": true,
+      "name": "openMatch",
+      "persistentUuid": "6af300f0-ccce-4874-aa16-7ba8d1341600",
+      "width": 154,
+      "x": 402,
+      "y": 268,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 154,
+      "layer": "multiplayer",
+      "locked": true,
+      "name": "inviteMatch",
+      "persistentUuid": "915160d1-61ca-4233-a7b8-64cbd35ce295",
+      "width": 154,
+      "x": 886,
+      "y": 268,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 154,
+      "layer": "multiplayer",
+      "locked": true,
+      "name": "lanMatch",
+      "persistentUuid": "93208fbc-8b04-4a5b-9047-70682a1758b7",
+      "width": 249,
+      "x": 1322,
+      "y": 268,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 154,
+      "layer": "multiplayer",
+      "locked": true,
+      "name": "chatRoom",
+      "persistentUuid": "2075dea7-cfc2-4d5f-abac-7346583fcd4a",
+      "width": 165,
+      "x": 398,
+      "y": 619,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 154,
+      "layer": "multiplayer",
+      "locked": true,
+      "name": "connectMethod",
+      "persistentUuid": "9e961d92-d623-41e0-b684-5405d6443c37",
+      "width": 147,
+      "x": 889,
+      "y": 619,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 121,
+      "layer": "multiplayer",
+      "locked": true,
+      "name": "serverVersion",
+      "persistentUuid": "666f4a96-6cb5-43c1-a747-9ffc205e39f1",
+      "width": 188,
+      "x": 1356,
+      "y": 638,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 95,
+      "layer": "",
+      "locked": true,
+      "name": "notification",
+      "persistentUuid": "01a352d9-66b6-439a-a305-aceec4e3fa3b",
+      "width": 640,
+      "x": 62,
+      "y": 942,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 52,
+      "layer": "",
+      "locked": true,
+      "name": "notificationText",
+      "persistentUuid": "dd4a7f95-2fbe-4d5a-8f86-c3dd824cf92d",
+      "width": 588,
+      "x": 84,
+      "y": 962,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 10,
+      "layer": "",
+      "locked": true,
+      "name": "notifcationTime",
+      "persistentUuid": "49f3e56d-0b43-412b-b11e-892897003d9b",
+      "width": 640,
+      "x": 62,
+      "y": 1027,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -522,85 +771,6 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\placeholder\\white.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 32,
-                        "y": 32
-                      },
-                      {
-                        "x": 0,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "button",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 2,
-          "leftEdgeAnchor": 1,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 2,
-          "topEdgeAnchor": 1,
-          "useLegacyBottomAndRightAnchors": false
-        },
-        {
-          "name": "SpriteRecolorizer",
-          "type": "Recolorizer::SpriteRecolorizer"
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\placeholder\\black.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1553,11 +1723,599 @@
         "characterSize": 30,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "openMatch",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\ui\\menu\\Multiplayer0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 186,
+                        "y": 2
+                      },
+                      {
+                        "x": 186,
+                        "y": 308
+                      },
+                      {
+                        "x": 2,
+                        "y": 308
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "inviteMatch",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\ui\\menu\\Multiplayer1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 2
+                      },
+                      {
+                        "x": 181,
+                        "y": 2
+                      },
+                      {
+                        "x": 181,
+                        "y": 303
+                      },
+                      {
+                        "x": 3,
+                        "y": 303
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "lanMatch",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\ui\\menu\\Multiplayer2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 235,
+                        "y": 3
+                      },
+                      {
+                        "x": 235,
+                        "y": 237
+                      },
+                      {
+                        "x": 3,
+                        "y": 237
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "chatRoom",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\ui\\menu\\Multiplayer3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 2
+                      },
+                      {
+                        "x": 167,
+                        "y": 2
+                      },
+                      {
+                        "x": 167,
+                        "y": 264
+                      },
+                      {
+                        "x": 3,
+                        "y": 264
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "connectMethod",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\ui\\menu\\Multiplayer4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 137,
+                        "y": 2
+                      },
+                      {
+                        "x": 137,
+                        "y": 282
+                      },
+                      {
+                        "x": 2,
+                        "y": 282
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "serverVersion",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\images\\ui\\menu\\Multiplayer5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 181,
+                        "y": 3
+                      },
+                      {
+                        "x": 181,
+                        "y": 220
+                      },
+                      {
+                        "x": 3,
+                        "y": 220
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "notification",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SpriteRecolorizer",
+          "type": "Recolorizer::SpriteRecolorizer"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\placeholder\\black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "notificationText",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "notifications [i]yowzers![/i]",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "assets\\fonts\\Casper.ttf",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "notifcationTime",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SpriteRecolorizer",
+          "type": "Recolorizer::SpriteRecolorizer"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\placeholder\\white.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "notificationBar",
+        "children": [
+          {
+            "objectName": "notification"
+          },
+          {
+            "objectName": "notificationText"
+          },
+          {
+            "objectName": "notifcationTime"
+          }
+        ]
+      },
+      {
+        "folderName": "multiplayer",
+        "children": [
+          {
+            "objectName": "openMatch"
+          },
+          {
+            "objectName": "inviteMatch"
+          },
+          {
+            "objectName": "lanMatch"
+          },
+          {
+            "objectName": "chatRoom"
+          },
+          {
+            "objectName": "connectMethod"
+          },
+          {
+            "objectName": "serverVersion"
+          }
+        ]
+      },
       {
         "folderName": "main",
         "children": [
@@ -1607,9 +2365,6 @@
       },
       {
         "objectName": "bgSquare"
-      },
-      {
-        "objectName": "button"
       },
       {
         "objectName": "reference"
@@ -1763,6 +2518,60 @@
           "parameters": [
             ""
           ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "GroupExists"
+          },
+          "parameters": [
+            "\"Player\"",
+            "\"FirstTime\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"Player\"",
+            "\"FirstTime\"",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetSceneVariableAsBoolean"
+          },
+          "parameters": [
+            "notify",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "notificationText",
+            "=",
+            "\"Welcome to [i]Flats 6[/i]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
         }
       ],
       "actions": [
@@ -1790,6 +2599,115 @@
             "50",
             "50",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "notifyBar",
+            "-",
+            "710"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\audio\\Menu.mp3",
+            "0",
+            "yes",
+            "100",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetY"
+          },
+          "parameters": [
+            "mpIcons",
+            "Scale",
+            "=",
+            ".001"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "openMatch",
+            "+",
+            "77"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "inviteMatch",
+            "+",
+            "77"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "lanMatch",
+            "+",
+            "77"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "chatRoom",
+            "+",
+            "77"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "connectMethod",
+            "+",
+            "77"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "serverVersion",
+            "+",
+            "60.5"
           ]
         }
       ]
@@ -1922,11 +2840,13 @@
           "colorG": 2,
           "colorR": 208,
           "creationTime": 0,
+          "folded": true,
           "name": "Multiplayer",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1951,6 +2871,16 @@
                 },
                 {
                   "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "state",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -1959,6 +2889,21 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "button"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -1978,10 +2923,24 @@
                 },
                 {
                   "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "button",
+                    "Tween",
+                    "\"y\"",
+                    "button.Y() + 134",
+                    "\"linear\"",
+                    ".3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectHeightTween2"
                   },
                   "parameters": [
-                    "multiplayer",
+                    "mainIcons",
                     "Tween",
                     "\"\"",
                     "0",
@@ -1992,13 +2951,41 @@
                 },
                 {
                   "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "mainIcons",
+                    "Tween",
+                    "\"y\"",
+                    "mainIcons.Y() + mainIcons.Height() / 2",
+                    "\"linear\"",
+                    ".3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "btn1",
+                    "btnText",
                     "Tween",
                     "\"\"",
                     "0",
+                    "\"linear\"",
+                    ".3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "btnText",
+                    "Tween",
+                    "\"y\"",
+                    "btnText.Y() - 134",
                     "\"linear\"",
                     ".3",
                     ""
@@ -2014,13 +3001,440 @@
                 },
                 {
                   "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "state",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "mainIcons"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "button",
+                        "Tween",
+                        "\"\"",
+                        "268",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "button",
+                        "Tween",
+                        "\"y\"",
+                        "button.Y() - 134",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "mpIcons",
+                        "Tween",
+                        "\"\"",
+                        "154",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "serverVersion",
+                        "Tween",
+                        "\"\"",
+                        "121",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "openMatch",
+                        "Tween",
+                        "\"y\"",
+                        "openMatch.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "inviteMatch",
+                        "Tween",
+                        "\"y\"",
+                        "inviteMatch.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "lanMatch",
+                        "Tween",
+                        "\"y\"",
+                        "lanMatch.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "chatRoom",
+                        "Tween",
+                        "\"y\"",
+                        "chatRoom.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "connectMethod",
+                        "Tween",
+                        "\"y\"",
+                        "connectMethod.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "serverVersion",
+                        "Tween",
+                        "\"y\"",
+                        "serverVersion.Y() - 60.5",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn1",
+                        "Text",
+                        "=",
+                        "\"Open Match\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn2",
+                        "Text",
+                        "=",
+                        "\"Invitation Match\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn3",
+                        "Text",
+                        "=",
+                        "\"Local Match\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn4",
+                        "Text",
+                        "=",
+                        "\"Chatroom\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn5",
+                        "Text",
+                        "=",
+                        "\"Connection Method\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn6",
+                        "Text",
+                        "=",
+                        "\"Online Version: 6.0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "btnText",
+                        "Tween",
+                        "\"\"",
+                        "255",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "btnText",
+                        "Tween",
+                        "\"y\"",
+                        "btnText.Y() + 134",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "colorB": 27,
+              "colorG": 2,
+              "colorR": 208,
+              "creationTime": 0,
+              "folded": true,
+              "name": "MP Buttons",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "button",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "state",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "notify",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "notificationText",
+                        "=",
+                        "\"Not Implemented.\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 27,
+          "colorG": 2,
+          "colorR": 208,
+          "creationTime": 0,
+          "disabled": true,
+          "folded": true,
+          "name": "Singleplayer",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "button",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "state",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "button",
+                    "button",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "button"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectHeightTween2"
                   },
                   "parameters": [
                     "button",
                     "Tween",
                     "\"\"",
-                    "268",
+                    "0",
+                    "\"linear\"",
+                    ".3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "button",
+                    "Tween",
+                    "\"y\"",
+                    "button.Y() + 134",
                     "\"linear\"",
                     ".3",
                     ""
@@ -2031,10 +3445,24 @@
                     "value": "Tween::TweenBehavior::AddObjectHeightTween2"
                   },
                   "parameters": [
-                    "multiplayer",
+                    "mainIcons",
                     "Tween",
                     "\"\"",
-                    "194",
+                    "0",
+                    "\"linear\"",
+                    ".3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "mainIcons",
+                    "Tween",
+                    "\"y\"",
+                    "mainIcons.Y() + mainIcons.Height() / 2",
                     "\"linear\"",
                     ".3",
                     ""
@@ -2045,19 +3473,440 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "btn1",
+                    "btnText",
                     "Tween",
                     "\"\"",
-                    "255",
+                    "0",
                     "\"linear\"",
                     ".3",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "btnText",
+                    "Tween",
+                    "\"y\"",
+                    "btnText.Y() - 134",
+                    "\"linear\"",
+                    ".3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    ".3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "state",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "mainIcons"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "button",
+                        "Tween",
+                        "\"\"",
+                        "268",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "button",
+                        "Tween",
+                        "\"y\"",
+                        "button.Y() - 134",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "mpIcons",
+                        "Tween",
+                        "\"\"",
+                        "154",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "serverVersion",
+                        "Tween",
+                        "\"\"",
+                        "121",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "openMatch",
+                        "Tween",
+                        "\"y\"",
+                        "openMatch.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "inviteMatch",
+                        "Tween",
+                        "\"y\"",
+                        "inviteMatch.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "lanMatch",
+                        "Tween",
+                        "\"y\"",
+                        "lanMatch.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "chatRoom",
+                        "Tween",
+                        "\"y\"",
+                        "chatRoom.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "connectMethod",
+                        "Tween",
+                        "\"y\"",
+                        "connectMethod.Y() - 77",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "serverVersion",
+                        "Tween",
+                        "\"y\"",
+                        "serverVersion.Y() - 60.5",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn1",
+                        "Text",
+                        "=",
+                        "\"Open Match\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn2",
+                        "Text",
+                        "=",
+                        "\"Invitation Match\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn3",
+                        "Text",
+                        "=",
+                        "\"Local Match\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn4",
+                        "Text",
+                        "=",
+                        "\"Chatroom\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn5",
+                        "Text",
+                        "=",
+                        "\"Connection Method\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "btn6",
+                        "Text",
+                        "=",
+                        "\"Online Version: 6.0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "btnText",
+                        "Tween",
+                        "\"\"",
+                        "255",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "btnText",
+                        "Tween",
+                        "\"y\"",
+                        "btnText.Y() + 134",
+                        "\"linear\"",
+                        ".3",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
+            },
+            {
+              "colorB": 27,
+              "colorG": 2,
+              "colorR": 208,
+              "creationTime": 0,
+              "folded": true,
+              "name": "MP Buttons",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "button",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "state",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "notify",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "notificationText",
+                        "=",
+                        "\"Not Implemented.\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "button",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "button",
+                "button",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "state",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"game\"",
+                "yes"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2079,6 +3928,166 @@
           ]
         }
       ]
+    },
+    {
+      "colorB": 0,
+      "colorG": 0,
+      "colorR": 0,
+      "creationTime": 0,
+      "name": "Notifcation System",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "notify",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::IsPlaying"
+              },
+              "parameters": [
+                "notifcationTime",
+                "Tween",
+                "\"time\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::IsPlaying"
+              },
+              "parameters": [
+                "notification",
+                "Tween",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Recolorizer::SpriteRecolorizer::Recolorize"
+              },
+              "parameters": [
+                "notification",
+                "SpriteRecolorizer",
+                "\"0;0;0\"",
+                "ColorConversion::HexToRgb(GlobalVariableString(player.colorHex))",
+                "0",
+                "50",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "notification",
+                "Opacity",
+                "=",
+                "150"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "notify",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "notifyBar",
+                "Tween",
+                "\"\"",
+                "notifyBar.X() + 710",
+                "\"easeOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+              },
+              "parameters": [
+                "notifcationTime",
+                "Tween",
+                "\"time\"",
+                "0",
+                "\"easeInSine\"",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "notifyBar",
+                "Tween",
+                "\"\"",
+                "notifyBar.X() - 710",
+                "\"easeInCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "notifcationTime",
+                "Resizable",
+                "=",
+                "640"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -2203,9 +4212,42 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "buttons",
+      "name": "main",
       "renderingType": "",
       "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "multiplayer",
+      "renderingType": "",
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
