@@ -1,0 +1,253 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.flats.mtsyntho",
+    "pixelsRounding": false,
+    "projectUuid": "4ea0a112-1627-4261-a2d5-bd9b51e9de80",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Flats 6 Rebooted",
+    "description": "Flats is an FPS Game by Foliage Games which had sadly been discontinued due to the company being deadpooled (allegedly)",
+    "author": "MTSyntho Dev",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [
+      "wJNvBw2TGEZ09MUQUZDv8c12dig1"
+    ],
+    "authorUsernames": [
+      "MTSyntho"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/fonts/Casper.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\Casper.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Main1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Main1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/splash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\splash.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/white.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholder\\white.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/reference.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholder\\reference.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholder\\black.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Main0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Main0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Main2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Main2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Main3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Main3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Main4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Main4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Main5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Main5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Quit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Quit.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/ui/menu/Reset.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\ui\\menu\\Reset.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/fonts/default_android.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\fonts\\default_android.ttf",
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "player",
+      "type": "structure",
+      "children": [
+        {
+          "name": "colorHex",
+          "type": "string",
+          "value": "0"
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/splash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/fps"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/colorconversion"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/repeateveryxseconds"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/currentgameversion"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/recolorizer"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/alignobject"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
