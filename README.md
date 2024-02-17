@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/pyletron/press-kit/blob/main/pyletronShadow.png?raw=true" alt="Flats Icon" style="height:128px; width:128px" />  
+  <img src="https://img.utdstc.com/icon/4ea/057/4ea0570ec79f7fbbd5437044217d5a66ce35a49350e1be91db79819198f83491:100?raw=true" alt="Flats Icon" style="height:128px; width:128px" />  
 </p>
 
 ## <h2 align="center">Flats 6</h2>
