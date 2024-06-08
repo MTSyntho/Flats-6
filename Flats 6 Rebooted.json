@@ -351,6 +351,54 @@
         "name": "texture_04.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/glow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\glow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholders/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholders\\black.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholders/reference2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholders\\reference2.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/tree.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\tree.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/MerryGoRound.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\MerryGoRound.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/BeachTable.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\BeachTable.glb",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -395,7 +443,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\placeholder\\black.png",
+                  "image": "assets\\placeholders\\black.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -481,6 +529,26 @@
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pointlights"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shadows"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/dragcamerawithpointer"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/mousepointerlock"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/recolorizer"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/collision3d"
     },
     {
@@ -518,10 +586,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/currentgameversion"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/recolorizer"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
