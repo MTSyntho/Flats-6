@@ -950,7 +950,7 @@
         "depth": 100,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "texture_03.png",
+        "frontFaceResourceName": "assets\\images\\maps\\urbanPark\\parkGrass.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -959,10 +959,10 @@
         "bottomFaceResourceName": "",
         "frontFaceVisible": true,
         "backFaceVisible": false,
-        "leftFaceVisible": true,
-        "rightFaceVisible": true,
-        "topFaceVisible": true,
-        "bottomFaceVisible": true,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
         "frontFaceResourceRepeat": false,
         "backFaceResourceRepeat": false,
         "leftFaceResourceRepeat": false,
@@ -1025,7 +1025,7 @@
         "width": 100,
         "height": 100,
         "depth": 100,
-        "enableTextureTransparency": false,
+        "enableTextureTransparency": true,
         "facesOrientation": "Y",
         "frontFaceResourceName": "",
         "backFaceResourceName": "assets\\glow.png",
@@ -1106,13 +1106,294 @@
         "width": 100,
         "animations": []
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "parkDome",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ObjectCenter",
+        "depth": 100,
+        "height": 100,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\parkDome.glb",
+        "originLocation": "ObjectCenter",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 100,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "parkDomeRoof",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 100,
+        "height": 100,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\parkDomeRoof.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 100,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "grayClimbPole",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 100,
+        "height": 100,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\grayClimbPole.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 100,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "collision",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\placeholders\\black.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\placeholders\\black.png",
+        "rightFaceResourceName": "assets\\placeholders\\black.png",
+        "topFaceResourceName": "assets\\placeholders\\black.png",
+        "bottomFaceResourceName": "assets\\placeholders\\black.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "curvedPath",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 100,
+        "height": 100,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\parkPath.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 100,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "path",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DBox",
+          "type": "Shadows::Shadows3DBox",
+          "CastShadow3DBox": false,
+          "ReceiveShadow3DBox": true
+        }
+      ],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 1,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\images\\maps\\urbanPark\\parkPath.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "StandardWithoutMetalness"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "circularBox",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 131.25000000000003,
+        "height": 300.00000000000006,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\circularBox.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 300.00000000000006,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "bush",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 264.90139584057033,
+        "height": 500,
+        "keepAspectRatio": true,
+        "materialType": "StandardWithoutMetalness",
+        "modelResourceName": "assets\\models\\Bush.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 99.95304048061371,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Streetlight",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 544.6569204330444,
+        "height": 22.352560609579207,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\streetlight.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 229.4860415160656,
+        "animations": []
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "NewFolder"
+        "folderName": "urbanPark",
+        "children": [
+          {
+            "objectName": "parkDome"
+          },
+          {
+            "objectName": "parkDomeRoof"
+          }
+        ]
       },
       {
         "folderName": "buttons",
@@ -1162,7 +1443,28 @@
         "objectName": "tree"
       },
       {
+        "objectName": "circularBox"
+      },
+      {
         "objectName": "beachTable"
+      },
+      {
+        "objectName": "grayClimbPole"
+      },
+      {
+        "objectName": "collision"
+      },
+      {
+        "objectName": "curvedPath"
+      },
+      {
+        "objectName": "path"
+      },
+      {
+        "objectName": "bush"
+      },
+      {
+        "objectName": "Streetlight"
       }
     ]
   },
@@ -1192,7 +1494,7 @@
             "9999",
             "2",
             "",
-            "yes",
+            "no",
             "\"2048\"",
             "sun.CenterX()",
             "sun.CenterY()",
@@ -1225,11 +1527,21 @@
         },
         {
           "type": {
+            "value": "PointLights::SetNeedsUpdate"
+          },
+          "parameters": [
+            "",
+            "\"Light\"",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
             "button",
-            "\"testArena\"",
+            "\"urbanPark\"",
             "0",
             "0",
             "0"
@@ -1241,6 +1553,28 @@
           },
           "parameters": [
             "player"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "button",
+            "Opacity",
+            "=",
+            "100"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "ammoBG",
+            "Opacity",
+            "=",
+            "100"
           ]
         }
       ]
@@ -2268,6 +2602,14 @@
             "=",
             "player.Object3D::Z() + 90"
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "collision"
+          ]
         }
       ]
     },
@@ -2319,9 +2661,9 @@
           },
           "parameters": [
             "",
-            "playerCam",
+            "player",
             "Object3D",
-            "platform",
+            "collision",
             "Object3D",
             "",
             ""
@@ -2335,10 +2677,98 @@
           },
           "parameters": [
             "",
-            "playerCam",
+            "player",
             "Object3D",
-            "platform",
+            "collision",
             "Object3D",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Collision3D::AreInCollision"
+          },
+          "parameters": [
+            "",
+            "player",
+            "Object3D",
+            "grayClimbPole",
+            "Object3D",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Collision3D::SeparateFromObjects"
+          },
+          "parameters": [
+            "",
+            "player",
+            "Object3D",
+            "grayClimbPole",
+            "Object3D",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Collision3D::AreInCollision"
+          },
+          "parameters": [
+            "",
+            "player",
+            "Object3D",
+            "grayClimbPole",
+            "Object3D",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Space"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "player",
+            "Object3D",
+            "+",
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "Jump3D::Jump3D::SetCurrentFallSpeed"
+          },
+          "parameters": [
+            "player",
+            "Jump3D",
+            "=",
+            "0",
             ""
           ]
         }
@@ -2448,9 +2878,42 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
+      "name": "collisions",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
       "name": "gui",
       "renderingType": "2d",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
