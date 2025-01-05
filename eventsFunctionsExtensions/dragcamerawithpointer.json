@@ -40,6 +40,8 @@
     "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Move a camera by dragging the mouse (or touchscreen).",

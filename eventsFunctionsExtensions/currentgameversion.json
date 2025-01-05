@@ -21,6 +21,8 @@
     "ZShmW1xkW7WWl9AkB78VITJMiTw1"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Return the current game version.",

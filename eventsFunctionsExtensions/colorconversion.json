@@ -33,6 +33,8 @@
     "onPsboRtDkUHNOsx7OPr8R8G1oj2"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Converts a hexadecimal string into a RGB string.  Example input: \"0459AF\".",

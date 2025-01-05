@@ -25,6 +25,8 @@
     "IRIhkkTTl2UHhfjrLTTH5GYwkYu1"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Triggers every X seconds.",

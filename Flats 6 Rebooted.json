@@ -484,6 +484,50 @@
         "name": "assets\\images\\maps\\urbanPark\\parkPath.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/models/circularBox.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\circularBox.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/Bush.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\Bush.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/streetlight.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\streetlight.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/parkBench.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\parkBench.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/parkCenter.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets\\models\\parkCenter.glb",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/images/maps/orange.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\images\\maps\\orange.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

@@ -17,6 +17,8 @@
     "q8ubdigLvIRXLxsJDDTaokO41mc2"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Enable or disable casting shadow for a 3D model.",

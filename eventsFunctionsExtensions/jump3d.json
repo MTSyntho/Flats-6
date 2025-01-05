@@ -27,6 +27,8 @@
     "PEzPAaWHgYgk5UwIPppsL6f2ugp2"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "the top of the object on Z axis",

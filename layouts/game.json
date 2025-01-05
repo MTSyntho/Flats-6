@@ -836,7 +836,7 @@
           "PreviousFallSpeed": 0.19999992847454,
           "HasPressedJumpKey": false,
           "CanJump": true,
-          "ShouldStopAtZero": true,
+          "ShouldStopAtZero": false,
           "PreviousState": "Idle"
         },
         {
@@ -1379,6 +1379,105 @@
         "width": 229.4860415160656,
         "animations": []
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "parkBench",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 100,
+        "height": 100,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\parkBench.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 100,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "parkCenter",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DModel",
+          "type": "Shadows::Shadows3DModel",
+          "CastShadow3DModel": true,
+          "ReceiveShadow3DModel": true
+        }
+      ],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 100,
+        "height": 100,
+        "keepAspectRatio": true,
+        "materialType": "KeepOriginal",
+        "modelResourceName": "assets\\models\\parkCenter.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 0,
+        "width": 100,
+        "animations": []
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "dirt",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Shadows3DBox",
+          "type": "Shadows::Shadows3DBox",
+          "CastShadow3DBox": true,
+          "ReceiveShadow3DBox": true
+        }
+      ],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\images\\maps\\orange.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\images\\maps\\orange.png",
+        "rightFaceResourceName": "assets\\images\\maps\\orange.png",
+        "topFaceResourceName": "assets\\images\\maps\\orange.png",
+        "bottomFaceResourceName": "assets\\images\\maps\\orange.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "StandardWithoutMetalness"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1434,6 +1533,9 @@
         "objectName": "ground"
       },
       {
+        "objectName": "parkCenter"
+      },
+      {
         "objectName": "platform"
       },
       {
@@ -1441,6 +1543,9 @@
       },
       {
         "objectName": "tree"
+      },
+      {
+        "objectName": "parkBench"
       },
       {
         "objectName": "circularBox"
@@ -1465,6 +1570,9 @@
       },
       {
         "objectName": "Streetlight"
+      },
+      {
+        "objectName": "dirt"
       }
     ]
   },
@@ -2687,6 +2795,116 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Collision3D::AreInCollision"
+          },
+          "parameters": [
+            "",
+            "player",
+            "Object3D",
+            "ground",
+            "Object3D",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Jump3D::Jump3D::SetShouldStopAtZero"
+          },
+          "parameters": [
+            "player",
+            "Jump3D",
+            "yes",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Collision3D::AreInCollision"
+          },
+          "parameters": [
+            "",
+            "player",
+            "Object3D",
+            "ground",
+            "Object3D",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Jump3D::Jump3D::SetShouldStopAtZero"
+          },
+          "parameters": [
+            "player",
+            "Jump3D",
+            "no",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Collision3D::AreInCollision"
+          },
+          "parameters": [
+            "",
+            "player",
+            "Object3D",
+            "dirt",
+            "Object3D",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Jump3D::Jump3D::SetShouldStopAtZero"
+          },
+          "parameters": [
+            "player",
+            "Jump3D",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Jump3D::Jump3D::SetCurrentFallSpeed"
+          },
+          "parameters": [
+            "player",
+            "Jump3D",
+            "=",
+            "0",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -2773,6 +2991,107 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "import {",
+        "\tVector3,",
+        "\tMatrix4",
+        "} from 'three'",
+        "",
+        "const motionBlurVertexShader = `",
+        "\tvarying vec2 vUv;",
+        "",
+        "\tvoid main() {",
+        "",
+        "\t\tgl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );",
+        "\t\tvUv = uv;",
+        "",
+        "\t}`",
+        "",
+        "const motionBlurFragmentShader = `",
+        "\tvarying vec2 vUv;",
+        "",
+        "\tuniform sampler2D tDepth;",
+        "\tuniform sampler2D tColor;",
+        "",
+        "\tuniform mat4 clipToWorldMatrix;",
+        "\tuniform mat4 previousWorldToClipMatrix;",
+        "",
+        "\tuniform vec3 cameraMove;",
+        "",
+        "\tuniform float velocityFactor;",
+        "\tuniform float delta;",
+        "",
+        "\tvoid main() {",
+        "",
+        "\t\tfloat zOverW = texture2D(tDepth, vUv).x;",
+        "",
+        "\t\t// clipPosition is the viewport position at this pixel in the range -1 to 1.",
+        "\t\tvec4 clipPosition = vec4(vUv.x * 2. - 1., vUv.y * 2. - 1., zOverW * 2. - 1., 1.);",
+        "",
+        "\t\tvec4 worldPosition = clipToWorldMatrix * clipPosition;",
+        "\t\tworldPosition /= worldPosition.w;",
+        "",
+        "\t\tvec4 previousClipPosition = worldPosition;",
+        "",
+        "\t\t// Reduce motion blur due to camera translation especially at the screen center.",
+        "\t\tpreviousClipPosition.xyz -= cameraMove * (",
+        "\t\t\t1. - smoothstep(.3, 1., clamp(length(clipPosition.xy), 0., 1.))",
+        "\t\t);",
+        "",
+        "\t\tpreviousClipPosition = previousWorldToClipMatrix * previousClipPosition;",
+        "\t\tpreviousClipPosition /= previousClipPosition.w;",
+        "",
+        "\t\tvec2 velocity = velocityFactor * (clipPosition - previousClipPosition).xy / delta * 16.67;",
+        "",
+        "\t\tvec4 finalColor = vec4(0.);",
+        "\t\tvec2 offset = vec2(0.);",
+        "\t\tfloat weight = 0.;",
+        "\t\tconst int samples = 20;",
+        "\t\tfor(int i = 0; i < samples; i++) {",
+        "    \t\t\toffset = velocity * (float(i) / (float(samples) - 1.) - .5);",
+        "    \t\t\tvec4 c = texture2D(tColor, vUv + offset);",
+        "\t\t\tfinalColor += c;",
+        "\t\t}",
+        "\t\tfinalColor /= float(samples);",
+        "\t\tgl_FragColor = vec4(finalColor.rgb, 1.);",
+        "",
+        "\t\t// debug: view velocity values",
+        "\t\t// gl_FragColor = vec4(abs(velocity), 0., 1.);",
+        "",
+        "\t\t// debug: view depth buffer",
+        "\t\t// gl_FragColor = vec4(vec3(zOverW), 1.);",
+        "\t}`",
+        "",
+        "export const motionBlurShader = {",
+        "",
+        "  uniforms: {",
+        "    tDepth: { type: 't', value: null },",
+        "    tColor: { type: 't', value: null },",
+        "",
+        "    velocityFactor: { type: 'f', value: 1 },",
+        "    delta: { type: 'f', value: 16.67 },",
+        "",
+        "    clipToWorldMatrix: { type: 'm4', value: new Matrix4() },",
+        "    previousWorldToClipMatrix: { type: 'm4', value: new Matrix4() },",
+        "",
+        "    cameraMove: { type: 'v3', value: new Vector3() }",
+        "  },",
+        "",
+        "  vertexShader: motionBlurVertexShader,",
+        "  fragmentShader: motionBlurFragmentShader",
+        "}"
+      ],
+      "parameterObjects": "",
+      "useStrict": true,
+      "eventsSheetExpanded": false
     }
   ],
   "layers": [

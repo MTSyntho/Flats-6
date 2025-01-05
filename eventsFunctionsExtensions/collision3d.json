@@ -23,6 +23,8 @@
     "PEzPAaWHgYgk5UwIPppsL6f2ugp2"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Define helper classes JavaScript code.",

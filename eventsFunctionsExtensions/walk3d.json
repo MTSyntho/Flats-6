@@ -23,6 +23,8 @@
     "3qThSVKAPdP03MXTWNpe2QaNxpv1"
   ],
   "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
     {
