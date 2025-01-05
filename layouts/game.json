@@ -1470,6 +1470,7 @@
         "leftFaceVisible": true,
         "rightFaceVisible": true,
         "topFaceVisible": true,
+        "bottomFaceVisible": true,
         "frontFaceResourceRepeat": false,
         "backFaceResourceRepeat": false,
         "leftFaceResourceRepeat": false,
